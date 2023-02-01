@@ -1,36 +1,18 @@
-# Intersection
-
-Write a function that finds all the values shared between two arrays.
+# challenge name: Intersection
 
 ---
+Finds all the values shared between two arrays
 
-## Docstring
+## Strategy
 
-Here's a starter docstring for your solutions. Feel free to rewrite it if that
-helps you understand:
+---
+Filter method remove duplicates and for loop with if statement to check if values of one array exist in another array.
 
-```js
-/**
- * Creates an array of values that are in both the first and the second arrays.
- *
- * Repeated values are not duplicated in the return value, and the order of result values are determined by the first array.
- *
- * **Note:** This function returns a new array, and has no side-effects.
- *
- * @param {Array} [array=[]] - The array to inspect.
- * @param {Array} [values=[]] - The values to include.
- * @returns {Array} Returns the new array of filtered values.
- * @example
- *
- * intersection([2, 1], [2, 3]);
- * // -> [2]
- *
- * @example
- *
- * intersection([2, 1, 2], [2, 3]);
- * // -> [2]
- */
-```
+## Implementation
 
-> Docstring is adapted from
-> [lodash's intersection](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7498)
+---
+* Start by removing duplicates in both two arrays to make sure repeated values are not duplicated in the return value.
+* Create an empty array that will store values shared between the two arrays
+* Check if values of one array exist in another array.
+* Push values that are shared in the created empty array, making the order of result values to be determined by the first array.
+* Return the array with shared values.
