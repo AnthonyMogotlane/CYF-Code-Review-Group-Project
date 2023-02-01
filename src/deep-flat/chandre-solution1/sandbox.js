@@ -9,3 +9,21 @@ import { deepFlat } from './deep-flat.js';
     the .spec.js file is for tests and final validation only, not experiments
     the main file should include only the exported function and jsdoc string
 */
+
+//testing simple nested array
+
+let nestArray = [["test"]];
+let uncomplexArray = nestArray.join('');
+console.log(uncomplexArray);
+
+//when implementing this code, it seemed both arrays removed which is incorrect.
+> console.log(nestArray.join(""));
+test
+
+//make it slightly more complicated/ Expecting [test, west, nest]
+let nestArray = [["test"],["west"],["nest"]];
+
+//had same problem but now tried mapping and then joining each el and it works
+> nestArray.map(el => el.join(","));
+[ 'test', 'west', 'nest' ]
+> 
