@@ -10,3 +10,14 @@ import { splitObject } from './split-object.js';
     the main file should include only the exported function and jsdoc string
 */
 
+// test Loop through array and return key/value pairs
+let myObj = { a: 1, b: 2, c: 3 };
+
+for(const key in myObj) {
+console.log(key) };
+
+//test final solution
+let withNestedKeys = Object.entries(splitObject).map((entry) => {
+  return { [entry[0]]: entry[1] };
+});
+console.log(withNestedKeys);

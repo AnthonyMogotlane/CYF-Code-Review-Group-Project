@@ -22,3 +22,9 @@
  * // -> []
  */
 
+export const splitObject = (mySplitObject = {}) => {
+  let withNestedKeys = Object.entries(mySplitObject).map((entry) => {
+    return { [entry[0]]: entry[1] };
+  });
+  return withNestedKeys;
+};
