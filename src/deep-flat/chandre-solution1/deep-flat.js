@@ -15,7 +15,12 @@
  * deepFlat(['a', ['b', [['c'], ['d']], 'e']]);
  * // -> ['a', 'b', 'c', 'd', 'e']
  */
-```
 
-> Docstring is adapted from
-> [lodash's flattenDeep](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7330)
+export const deepFlat = (arrOfArrays = []) => {
+  // create a copy of the argument to avoid side-effects
+  const arrayCopy= [...arrOfArrays];
+
+  let = arrayCopy.map(el => el.join(","))
+
+  // return the copied & sorted array of numbers
+  return deNest;
