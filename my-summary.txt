@@ -1,0 +1,9 @@
+This plan is for a group exercise in which participants will learn about code review and code quality automation by working on group projects using JavaScript. The plan includes the following steps:
+
+1) Practice code review by learning about formatting, linting, testing, and code review.
+2) Set up a project board with columns for to-do, in-progress, ready for review, and done solutions.
+3) Develop solutions on separate branches and submit them for review through pull requests.
+4) Use a checklist to review code for behavior, strategy, and implementation.
+5) Set up the group repo so that all members have write access, and set up branch protection rules and automated checks.
+6) Clone the repo, navigate to it, and install development dependencies on local computers.
+7) Optionally, use browser devtools or Study Lenses to develop code.
